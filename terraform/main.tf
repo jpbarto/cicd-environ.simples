@@ -17,6 +17,7 @@ resource "helm_release" "simples" {
   chart            = "simples"
   repository       = "../helm"
   namespace        = "simples"
+  version          = "0.1.2"
   create_namespace = true
 
   set = [
