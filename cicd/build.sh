@@ -6,4 +6,4 @@ tofu init
 tofu validate
 popd
 
-helm install --dry-run goodman --debug ./helm/simples
+helm install --dry-run noop --debug ./helm/simples
