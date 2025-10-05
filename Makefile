@@ -3,6 +3,8 @@
 cicd_build:
 	./cicd/build.sh
 
+cicd_unit_test: ;
+
 cicd_deliver:
 	./cicd/deliver.sh
 
