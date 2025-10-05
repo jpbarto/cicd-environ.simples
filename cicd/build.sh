@@ -19,4 +19,4 @@ tofu init
 tofu validate
 popd
 
-helm install --dry-run noop --debug ./helm/simples
+helm lint ./helm/simples
