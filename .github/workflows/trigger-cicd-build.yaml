@@ -21,7 +21,7 @@ jobs:
           repo_owner="jpbarto"
           repo_name="cicd-environ.cicd"
           event_type="trigger-workflow"
-          service=${{ github.event.inputs.target_service }}"
+          service="${{ github.event.inputs.target_service }}"
           version="${{ github.event.inputs.target_version }}"
 
           curl -L \
