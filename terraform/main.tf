@@ -28,6 +28,10 @@ resource "helm_release" "simples" {
     {
       name  = "env.SQS_DLQ_NAME",
       value = module.sqs.dead_letter_queue_name
+    },
+    {
+      name = "env.DEPEPNDENCY_URL",
+      value = var.dependency_url
     }
   ]
 }
