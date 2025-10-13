@@ -5,7 +5,7 @@ provider "aws" {
 data "terraform_remote_state" "k8s_cluster" {
   backend = "s3"
   config = {
-    bucket = "tofu-state-prod-AB12CF"
+    bucket = "cicd-environ-tofu-state-prod-ab12cf"
     key = "prod/platform/terraform.tfstate"
     region = "us-east-2"
   }
